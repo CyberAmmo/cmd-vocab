@@ -19,4 +19,10 @@ def vocab(w):
 
 word = input('Enter a word here: ').lower()
 
-print(vocab(word))
+output = vocab(word)
+
+if type(output) == list:
+    for i in output:
+        print(i)
+else:
+    print(output)
